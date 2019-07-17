@@ -510,7 +510,7 @@ void 조선시대(EventManager& evt_mng)
 		e->content = "일본이 우리나라의 외교권을 박탈하는 조약을 강제체결했습니다.";
 
 		e->CanStart = [&](Gamedata& data) {
-			if (data.dict["해금령"] == "한일합방")
+			if (data.dict["근대사"] == "한일합방")
 			{
 				return false;
 			}
